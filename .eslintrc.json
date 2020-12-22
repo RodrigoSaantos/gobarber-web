@@ -36,6 +36,7 @@
       "@typescript-eslint/ban-types": "off",
       "no-use-before-define": "off",
       "prettier/prettier": "error",
+      "import/no-duplicates": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
