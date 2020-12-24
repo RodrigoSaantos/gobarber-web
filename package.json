@@ -40,6 +40,14 @@
       "not dead",
       "not op_mini all"
     ],
+    "jest": {
+      "collectCoverageFrom": [
+        "src/pages/**/*.tsx",
+        "src/components/**/*.tsx",
+        "src/hooks/*.tsx",
+        "!src/hooks/index.ts"
+      ]
+    },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
