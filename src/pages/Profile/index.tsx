@@ -128,6 +128,8 @@ const Profile: React.FC = () => {
     },
     [addToast, updateUser],
   );
+
+  console.log(user.avatar_url === null ? 'vdd' : 'false');
   return (
     <Container>
       <header>
@@ -148,7 +150,10 @@ const Profile: React.FC = () => {
           onSubmit={handleSubmit}
         >
           <AvatarInput>
-            <img src={user.avatar_url} alt={user.name} />
+            <img
+              src={user.avatar_url === null ? '/noone.jpeg' : user.avatar_url}
+              alt={user.name}
+            />
             <label htmlFor="avatar">
               <FiCamera />
               <input type="file" id="avatar" onChange={handleAvatarChange} />

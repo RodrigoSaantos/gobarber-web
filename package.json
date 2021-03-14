@@ -35,26 +35,6 @@
     "test:coverage": "react-scripts test --coverage --watchAll false",
     "eject": "react-scripts eject"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "jest": {
-      "collectCoverageFrom": [
-        "src/pages/**/*.tsx",
-        "src/components/**/*.tsx",
-        "src/hooks/*.tsx",
-        "!src/hooks/index.ts"
-      ]
-    },
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
     "@testing-library/react-hooks": "^3.7.0",
     "@types/react-router-dom": "^5.1.6",
@@ -75,5 +55,17 @@
     "eslint-plugin-react-hooks": "4",
     "prettier": "^2.1.2",
     "react-test-renderer": "^17.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

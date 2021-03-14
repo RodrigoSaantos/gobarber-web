@@ -140,7 +140,10 @@ const Dashboard: React.FC = () => {
           <img src={logoImg} alt="GoBarber" />
 
           <Profile>
-            <img src={user.avatar_url} alt={user.name} />
+            <img
+              src={user.avatar_url === null ? '/noone.jpeg' : user.avatar_url}
+              alt={user.name}
+            />
             <div>
               <span>Bem-vindo,</span>
               <Link to="/profile">
@@ -161,7 +164,13 @@ const Dashboard: React.FC = () => {
           <p>
             {isToday(selectedDate) && <span>Hoje</span>}
             <span>{selectedDateAsText}</span>
-            <span>{selectedWeekDay}-feira</span>
+            <span>
+              {selectedWeekDay === 'sábado' || selectedWeekDay === 'domingo'
+                ? selectedWeekDay[0].toUpperCase() + selectedWeekDay.substr(1)
+                : `${
+                    selectedWeekDay[0].toUpperCase() + selectedWeekDay.substr(1)
+                  }-feira`}
+            </span>
           </p>
 
           {isToday(selectedDate) && nextAppointment && (
