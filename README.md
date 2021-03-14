@@ -64,13 +64,20 @@ $ yarn
 $ npm install
 
 # Run Aplication
-$ yarn dev
+$ yarn start
 # or
-$ npm run dev
+$ npm start
 
 # Access localhost
 http://localhost:3000
 ```
+To make this project more organized, I moved the applications **(rest api, web client, mobile client)** to 3 different repositories.
+
+Here are the links to them
+
+- [REST API](https://github.com/RodrigoSaantos/gobarber-backend.git)
+- [Web client](https://github.com/RodrigoSaantos/gobarber-web.git)
+- [Mobile client](https://github.com/RodrigoSaantos/gobarber-mobile.git)
 
 <h2 id="contribution"> 🤝 Contribution </h2>
 
